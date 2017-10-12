@@ -17,7 +17,7 @@ public class TextViewHolder extends BindingViewHolder<TextModel, TextLayoutBindi
     }
 
     @Override
-    protected void onBind(TextModel data) {
+    protected void onBind(TextModel data, int position) {
         mBinding.setViewmodel(data);
         mBinding.executePendingBindings();
         mBinding.container.setOnClickListener(new View.OnClickListener() {

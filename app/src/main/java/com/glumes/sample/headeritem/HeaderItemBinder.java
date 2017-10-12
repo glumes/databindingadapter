@@ -22,7 +22,8 @@ public class HeaderItemBinder extends ViewHolderBinder<HeaderModel, HeaderViewHo
     }
 
     @Override
-    public void onBindViewHolder(HeaderViewHolder holder, HeaderModel data) {
-        holder.onBind(data);
+    public void onBindViewHolder(HeaderViewHolder holder, HeaderModel data, int position) {
+        holder.onBind(data, position);
     }
+
 }

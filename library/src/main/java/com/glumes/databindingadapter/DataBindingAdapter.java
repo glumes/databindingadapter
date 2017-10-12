@@ -38,7 +38,7 @@ public class DataBindingAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
         ViewHolderBinder viewHolder = mItemHolderManager.getViewHolderWrapper(holder.getItemViewType());
 
-        viewHolder.onBindViewHolder((BindingViewHolder) holder, object);
+        viewHolder.onBindViewHolder((BindingViewHolder) holder, object, position);
     }
 
     @Override
@@ -49,7 +49,7 @@ public class DataBindingAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
             ViewHolderBinder viewHolder = mItemHolderManager.getViewHolderWrapper(holder.getItemViewType());
 
-            viewHolder.onBindViewHolder((BindingViewHolder) holder, object, payloads);
+            viewHolder.onBindViewHolder((BindingViewHolder) holder, object, position, payloads);
         } else {
             onBindViewHolder(holder, position);
         }

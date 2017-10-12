@@ -15,8 +15,8 @@ public class HeaderViewHolder extends BindingViewHolder<HeaderModel, HeaderLayou
     }
 
     @Override
-    protected void onBind(HeaderModel data) {
+    protected void onBind(HeaderModel data, int position) {
         mBinding.setViewmodel(data);
-
     }
+
 }

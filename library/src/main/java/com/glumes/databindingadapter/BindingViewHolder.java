@@ -13,10 +13,10 @@ public abstract class BindingViewHolder<T, D extends ViewDataBinding> extends Re
         this.mBinding = binding;
     }
 
-    protected abstract void onBind(T data);
+    protected abstract void onBind(T data, int position);
 
-    protected void onBind(T data, Object payload) {
-        onBind(data);
+    protected void onBind(T data, int position, Object payload) {
+        onBind(data, position);
     }
 
     public D getBinding() {

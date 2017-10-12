@@ -22,7 +22,8 @@ public class TextItemBinder extends ViewHolderBinder<TextModel, TextViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(TextViewHolder holder, TextModel data) {
-        holder.onBind(data);
+    public void onBindViewHolder(TextViewHolder holder, TextModel data, int position) {
+        holder.onBind(data, position);
     }
+
 }
