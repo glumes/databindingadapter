@@ -65,7 +65,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void delete() {
-        mItems.remove(mItems.size() - 1);
+        if (!mItems.isEmpty()) {
+            mItems.remove(mItems.size() - 1);
+        }
     }
 
     public void clear() {
