@@ -18,4 +18,13 @@ public class BindingUtil {
                 .load(url)
                 .into(view);
     }
+
+    @BindingAdapter("imageDrawable")
+    public static void loadImage(ImageView view, int id) {
+
+        Glide.with(view.getContext())
+                .load(id)
+                .into(view);
+    }
+
 }
