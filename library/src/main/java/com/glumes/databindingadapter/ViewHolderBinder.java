@@ -13,7 +13,7 @@ public abstract class ViewHolderBinder<D, T extends BindingViewHolder> {
 
     public abstract void onBindViewHolder(T holder, D data,int position);
 
-    protected void onBindViewHolder(T holder, D data, int position ,List<Object> payloads) {
+    public void onBindViewHolder(T holder, D data, int position ,List<Object> payloads) {
         onBindViewHolder(holder, data,position);
     }
 

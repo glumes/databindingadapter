@@ -4,12 +4,12 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.glumes'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 25
+        minSdkVersion 22
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
 
@@ -37,6 +37,21 @@ android {
 
 dependencies {
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
 
 }
+
+
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    repoName = "maven"
+    userOrg = 'glumeslib'
+    groupId = 'com.glumes'
+    artifactId = 'databindingadapter'
+    publishVersion = '0.0.1'
+    desc = 'recyclerview adapter with databinding'
+    website = 'https://github.com/glumes/databindingadapter'
+}
+
