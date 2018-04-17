@@ -15,7 +15,7 @@ public class ImageViewHolder extends BindingViewHolder<ImageModel, ImageLayoutBi
     }
 
     @Override
-    protected void onBind(ImageModel data, int position) {
+    public void onBind(ImageModel data, int position) {
         mBinding.setViewmodel(data);
         mBinding.executePendingBindings();
     }

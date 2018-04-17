@@ -50,7 +50,7 @@ publish {
     userOrg = 'glumeslib'
     groupId = 'com.glumes'
     artifactId = 'databindingadapter'
-    publishVersion = '0.0.1'
+    publishVersion = '0.0.3'
     desc = 'recyclerview adapter with databinding'
     website = 'https://github.com/glumes/databindingadapter'
 }
